@@ -1,0 +1,4 @@
+function loadDoc(){
+    var xmlHttp = new XMLHttpRequest();
+    
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>remeveChild</h1>
+    <button onclick="remove()">요소 노드 삭제!</button>
+    <button onclick="change()">요소 노드 change!</button>
+    <button onclick="changeText()">텍스트 체인지</button>
+    <div id="list">
+        <p>HTML</p>
+        <p id="item"> CSS</p>
+        <p id="item2">JavaScript</p>
+    </div>
+    <script>
+        function remove(){
+            var parent=document.getElementById("list");
+            var removeItem= document.getElementById("item");
+            parent.removeChild(document.getElementById("item"));
+
+        }
+        function change(){
+            var parent=document.getElementById("list");
+            var first= document.getElementById("item");
+            var second= document.getElementById("item2");
+            parent.replaceChild(first, second);
+        }
+        function changeText(){
+            var para=document.getElementById("item2");
+            para.firstChild.nodeValue="텍스트 변경완료";
+        }
+
+
+        
+
+    </script>
+</body>
+</html>

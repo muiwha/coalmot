@@ -1,0 +1,35 @@
+<html>
+    <head>
+
+    </head>
+
+    <body>
+        <input type="text" id="num1" value="4" onchange = "innerHTMLTest()">
+        <input type="text" id="num2" value="5" onchange = "innerHTMLTest()">
+        <div id="rand-val">let's go</div>
+        <button onclick = "innerHTMLTest()">generate</button>
+
+
+
+        <script>
+            function innerHTMLTest(){
+                var randValNode = document.getElementById("rand-val");
+                
+                console.log("helloworld")
+                a=document.getElementById("num1").value
+                b=document.getElementById("num2").value
+                c=parseInt(a)
+                d=parseInt(b)
+                console.log(a)
+                console.log(b)
+                console.log(c)
+                console.log(d)
+                e = c+d
+                // randValNode.innerHTML = "<b>hello"+(c+d)+"world</b>";
+                randValNode.innerHTML = e;
+                
+            }
+            
+        </script>
+    </body>
+</html>

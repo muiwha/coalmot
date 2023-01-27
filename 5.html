@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Dom Element</title>
+</head>
+<body>
+    <h1>HTML 태그이름을 이용한 선택</h1>
+    <ul>
+        <li class = "odd">첫번째 아이템이에요</li>
+        <li >두번째 아이템이에요</li>
+        <li class = "odd">세번째 아이템이에요</li>
+        <li >네번째 아이템이에요</li>
+        <li class = "odd">다섯번째 아이템이에요</li>
+    </ul>
+</body>
+<script>
+    console.log("start");
+    var selectedItem = document.getElementsByClassName("odd")
+    console.log(selectedItem.length)
+    for (i=0; i < selectedItem.length; i++){
+        console.log("hello")
+    selectedItem.item(i).style.color = "red" ;   
+    }
+    
+</script>
+</html>

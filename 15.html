@@ -1,0 +1,20 @@
+<html>
+    <head></head>
+    <body>
+        <h1>객체의 프로퍼티 참조</h1>
+        <script>
+            var person = {
+                name: '홍길동',
+                birth: "030219",
+                pid: "123456",
+                fullid: function(){
+                    return this.birth+"-"+this.pid;
+                }
+            }
+            document.write(person.name + "<br>");
+            document.write(person["name"] + "<br>");
+            document.write(person.fullid() + "<br>");
+            
+        </script>
+    </body>
+</html>

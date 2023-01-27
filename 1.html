@@ -1,0 +1,59 @@
+<html>
+    <head>
+
+    </head>
+
+    <body>
+        <input type="button" value="Button1" id = "b1"></input>
+        <input type="button" value="Button1" id = "b2"></input>
+
+        <script>
+            document.getElementById('b1').onclick= function(){
+                alert('버튼꿀럭')
+            }
+            document.getElementById('b2').style.display = 'none'
+            
+        </script>
+        <script>
+            const numbers = {
+                a: 1,
+                b: 2,
+                get sum(){
+                    console.log('sum 함수가 실행됩니다.')
+                    return this.a + this.b
+                }
+            }
+            console.log(numbers.sum)
+            numbers.a=20
+            numbers.b=20
+            console.log(numbers.sum)
+            
+            const captainAmerica = {
+                name: '스티븐 로저스',
+                actor: '크리스 에반스',
+                alias: '캡틴아메리카'
+            }
+            const ironMan = {
+                name: '토니스타크 ',
+                actor: '로버트 다우니 주니어',
+                alias: '아이언맨'
+            }
+            function print(hero) {
+                const text=`${hero.alias}(${hero.name}) 역할을 맡은 배우는 ${hero.actor} 입니다. `
+                console.log(text)
+            }
+            print(ironMan)
+            print(captainAmerica)
+
+            const dog={
+                name: '멍멍이',
+                sound: '멍멍~',
+                say: function() {
+                    console.log(this.sound)
+                }
+            }
+            dog.say()
+        </script>
+        <!-- 인풋창 만들기  -->
+    </body>
+</html>
